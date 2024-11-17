@@ -4,16 +4,15 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public class Boat {
-    private float x, y;
-    private float width, height;
-    private float speed;
+    private float x;
+    private float y;
+    private float width = 100f;
+    private float height = 30f;
+    private float speed = 200f;
 
-    public Boat(float startX, float startY, float width, float height, float speed) {
+    public Boat(float startX, float startY) {
         this.x = startX;
         this.y = startY;
-        this.width = width;
-        this.height = height;
-        this.speed = speed;
     }
 
     public void moveLeft(float delta) {
